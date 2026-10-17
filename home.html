@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGA - Home</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="marca">
+        <div class="logo">F</div>
+        <div><strong>SGA</strong><small>Docente</small></div>
+      </div>
+
+      <nav class="nav">
+        <button data-view="turmas" class="ativo"><i class="bi bi-people"></i> Minhas turmas</button>
+        <button data-view="perfil"><i class="bi bi-person-circle"></i> Meu perfil</button>
+        <button id="btn-sair"><i class="bi bi-box-arrow-right"></i> Sair</button>
+      </nav>
+
+      <div class="sidebar-rodape">
+        <div class="avatar pequeno" data-avatar></div>
+        <div><strong id="lateral-nome"></strong><small>Professor(a)</small></div>
+      </div>
+    </aside>
+
+    <div class="principal">
+      <header class="cabecalho">
+        <div>
+          <h1 id="titulo">Minhas turmas</h1>
+          <p id="subtitulo">Selecione uma turma para ver o diário de notas</p>
+        </div>
+        <button class="avatar" data-avatar id="atalho-perfil" title="Meu perfil" aria-label="Meu perfil"></button>
+      </header>
+
+      <main class="conteudo" id="conteudo"></main>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/calculo.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
